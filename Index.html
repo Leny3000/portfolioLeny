@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script src="Index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="icon.jpg" rel="icon">
+    <title>Portfolio</title>
+</head>
+<body>
+  <header id="header" class="fixed-top header-scrolled">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo">
+      <a href="/"> Mon Portfolio</a>
+      </h1>
+      <nav id="navbar" class="navbar">
+      <ul>
+        <li>
+          <a class="nav-link scrollto active" href="#hero">Accueil</a>
+        </li>
+        <li>
+          <a class="nav-link scrollto" href="#about">À propos</a>
+        </li>
+        <li>
+          <a class="nav-link scrollto active" href="#projets">Projets</a>
+        </li>
+        <li class="dropdown">
+          <a class="nav-link scrollto" href="#compétences">Compétences</a>
+          <ul class="dropdown-menu">
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#php">PHP</a></li>
+            <li><a href="#mysql">MySQL</a></li>
+            <li><a href="#git">Git</a></li>
+            <li><a href="#linux">Linux</a></li>
+            <li><a href="#windows">Windows</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="nav-link scrollto" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle">
+      </i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenu principal avec les sections -->
+  <main>
+    <!-- Section À propos -->
+    <section id="about">
+      <h2>À propos</h2>
+      <p>
+        Bonjour, je m'appelle Lény Guillard, je suis étudiant en 1ère année en BTS SIO au lycée Simone Weil.
+      </p>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets">
+      <h2>Projets</h2>
+      <p>
+        Je vais présenter les projets que j'ai effectué au cous de cette année scolaire.
+      </p>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-slide">
+            <img src="glpi.jpg" alt="1">
+          </div>
+          <div class="carousel-slide">
+            <img src="logo anime.jpg" alt="2">
+          </div>
+          <div class="carousel-slide">
+            <img src="logo portfolio.jpg" alt="3">
+          </div>
+          <button class="carrousel-button prev">Précédent</button>
+          <button class="carrousel-button next">Suivant</button>
+        </div>
+    </section>
+
+    <section id="compétences">
+      <h2>Compétences</h2>
+      <p>
+        Je vais présenter les maîtrises des compétences sur le développement (HTML, CSS, PHP, MySQL, Git, Linux...)
+      </p>
+      <div class="compétences-container">
+        <div class="compétence">
+          <h3 class="compétence-title">Développement Web</h3>
+          <ul class="sous-menu">
+            <li>HTML : 60%</li>
+            <li>CSS : 50%</li>
+            <li>JavaScript : 45%</li>
+            <li>PHP : 30%</li>
+          </ul>
+        </div>
+        <div class="compétence">
+          <h3 class="compétence-title">Base de données</h3>
+          <ul class="sous-menu">
+            <li>MySQL : 40%</li>
+          </ul>
+        </div>
+        <div class="compétence">
+          <h3 class="compétence-title">Gestion de versions</h3>
+          <ul class="sous-menu">
+            <li>Git</li>
+          </ul>
+        </div>
+        <div class="compétence">
+          <h3 class="compétence-title">Site de versions</h3>
+          <ul class="sous-menu">
+            <li>GitHub : 60%</li>
+          </ul>
+        </div>
+        <div class="compétence">
+          <h3 class="compétence-title">Systèmes d'exploitation</h3>
+          <ul class="sous-menu">
+            <li>Linux : 45%</li>
+            <li>Windows : 70%</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact avec formulaire -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+    
+  </main>    
+  </div>
+</body>
+</html>

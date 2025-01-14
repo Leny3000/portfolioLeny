@@ -1,0 +1,322 @@
+/* Réinitialisation des marges et des paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Définition de la police et de la taille de base */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #f0f4f8, #12dada);
+  background-color: #e71616; /* Couleur de fond générale */
+  padding-top: 60px; /* Pour décaler le contenu sous le header fixé */
+}
+
+/* Styles pour le header */
+header {
+  background-color: #3097c0;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .logo a {
+  color: #ffd700; /* Jaune doré pour la marque */
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Style du sous-menu déroulant */
+.dropdown-menu {
+  display: none; /* Masqué par défaut */
+  position: absolute;
+  top: 100%;
+  left: 1;
+  background-color: #5811ddb9;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Apparition du sous-menu au survol */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style des liens du sous-menu */
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #3498db; /* Bleu clair au survol */
+}
+
+/* Styles responsives */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  .mobile-nav-toggle {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+
+  header .container {
+      flex-direction: column;
+  }
+}
+
+a.nav-link{
+  color: #1dfc00;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+/* Mise en forme des sections */
+section {
+  padding: 60px 20px;
+  margin: 40px 0;
+  /* background-color: #fff; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+}
+
+/* Style pour les titres de section */
+h2 {
+  font-size: 2rem;
+  color: #366799; /* Bleu foncé pour les titres */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Style pour les paragraphes */
+p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #555; /* Gris foncé */
+}
+
+/* Conteneur des compétences */
+.compétences-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style des titres des compétences */
+.compétence-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Style des sous-menus */
+.sous-menu {
+  display: none; /* Masqué par défaut */
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.sous-menu li {
+  font-size: 1rem;
+  color: #333;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Effet au survol des sous-menus */
+.sous-menu li:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Affichage du sous-menu au survol */
+.compétence:hover .sous-menu {
+  display: block;
+}
+
+/* Carousel */
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Formulaire de contact */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8; /* Gris clair pour le fond du formulaire */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  text-align: left;
+  width: 100%;
+  color: #2c3e50;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #3498db; /* Bleu clair sur focus */
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #3498db; /* Bleu clair */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2980b9; /* Bleu plus foncé au survol */
+}
+
+/* Styles responsives */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  .mobile-nav-toggle {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+
+  header .container {
+      flex-direction: column;
+  }
+}
+
+/* Ajout de l'animation au bouton "Précédent" et "Suivant" */
+button.prev, button.next {
+  background-color: #2c3e50; /* Bleu foncé */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: none; /* Par défaut masqué */
+}
+
+button.prev:hover, button.next:hover {
+  background-color: #f39c12; /* Jaune-orangé au survol */
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+/* Afficher les boutons dans le carousel */
+.carousel-container:hover button.prev,
+.carousel-container:hover button.next {
+  display: block;
+}
