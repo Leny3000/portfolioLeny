@@ -9,14 +9,15 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background: linear-gradient(135deg, #f0f4f8, #12dada);
-  background-color: #e71616; /* Couleur de fond générale */
+  background-image: url(cyber_security_background.jpg) ;
+  /* background: linear-gradient(135deg, #f0f4f8, #12dada);
+  background-color: #e71616; Couleur de fond générale */
   padding-top: 60px; /* Pour décaler le contenu sous le header fixé */
 }
 
 /* Styles pour le header */
 header {
-  background-color: #3097c0;
+  /* background-color: #3097c0; */
   color: #fff;
   padding: 20px 0;
   position: fixed;
@@ -34,7 +35,7 @@ header .container {
 }
 
 header .logo a {
-  color: #ffd700; /* Jaune doré pour la marque */
+  color: #ffffff; /* Jaune doré pour la marque */
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -91,7 +92,7 @@ nav ul li a {
 }
 
 .dropdown-menu li a:hover {
-  background-color: #3498db; /* Bleu clair au survol */
+  background-color: #ffffff; /* Bleu clair au survol */
 }
 
 /* Styles responsives */
@@ -117,7 +118,7 @@ nav ul li a {
 }
 
 a.nav-link{
-  color: #1dfc00;
+  color: #ffffff;
 }
 
 .mobile-nav-toggle {
@@ -136,7 +137,7 @@ section {
 /* Style pour les titres de section */
 h2 {
   font-size: 2rem;
-  color: #366799; /* Bleu foncé pour les titres */
+  color: #ffffff; /* Bleu foncé pour les titres */
   margin-bottom: 15px;
   text-align: center;
 }
@@ -145,7 +146,7 @@ h2 {
 p {
   font-size: 1.1rem;
   text-align: center;
-  color: #555; /* Gris foncé */
+  color: #ffffff; /* Gris foncé */
 }
 
 /* Conteneur des compétences */
@@ -158,7 +159,7 @@ p {
 /* Style des titres des compétences */
 .compétence-title {
   font-size: 1.5rem;
-  color: #2c3e50;
+  color: #ffffff;
   cursor: pointer;
   padding: 10px 0;
   text-align: center;
@@ -176,7 +177,7 @@ p {
 
 .sous-menu li {
   font-size: 1rem;
-  color: #333;
+  color: #ffffff;
   margin: 5px 0;
   padding: 5px;
   border-radius: 5px;
@@ -185,7 +186,7 @@ p {
 
 /* Effet au survol des sous-menus */
 .sous-menu li:hover {
-  background-color: #3498db;
+  background-color: #ffffff;
   color: white;
 }
 
